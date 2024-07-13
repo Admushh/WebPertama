@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" href="" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-gray-800">Muhammad Dzaky Tafirly</a>
+                <div>
+                    <a href="#about" class="text-gray-800 hover:text-gray-600 mx-4">About</a>
+                    <a href="#projects" class="text-gray-800 hover:text-gray-600 mx-4">My Journey</a>
+                    <a href="#contact" class="text-gray-800 hover:text-gray-600 mx-4">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-cover bg-center h-screen" style="background-image:url(jegol.jpg);">
+        <div class="flex items-center justify-center h-full bg-gray-900 bg-opacity-50">
+            <div class="text-center">
+                <h1 class="text-white text-5xl font-bold">Welcome to My Blog!</h1>
+                <br>
+                <p class="text-white ">Showcasing my projects and skills</p>
+                <br>
+                <a href="#projects" class="mt-8 px-8 py-2 bg-blue-600 text-white text-lg rounded hover:bg-blue-500 ">View Journey</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center">About Me</h2>
+            <p class="mt-4 text-gray-600 text-center">Halo semuanya! Perkenalkan nama saya Dzaky, saya merupakan seorang pelajar/mahasiswa aktif. Saat ini saya sedang menjalani perkuliahan di semester 4. Saya juga merupakan anak pertama dari dua bersaudara. Saya memiliki 1 adik perempuan. Saya lahir di Jakarta. Hobi saya adalah bermain game. Terima kasih. </p>
+            <div class="mt-8 flex justify-center">
+                <img src="brodo.jpg" alt="Your Photo" class="rounded-full w-48 h-48">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center">My Journey</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="smpjaki.jpeg" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">SMPN 89 JAKARTA BARAT</h3>
+                        <p class="mt-2 text-gray-600">Ya gimana yak kepental 111 sama  75, mau gamau dah</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-400">Read More</a>
+                    </div>
+                </div>
+                <!-- Repeat for other projects -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="smajaki.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">SMAN 16 JAKARTA</h3>
+                        <p class="mt-2 text-gray-600">Kalo ini ya.. kepental 78 sama swable</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-400">Read More</a>
+                    </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="ugm.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold">UGM A.K.A Gundar tercinta iyyeahhhhh</h3>
+                    <p class="mt-2 text-gray-600">i mean like.. siapa si yang gamau masuk ni kampus bejiirr?</p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-400">Read More</a>
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center">Contact Me</h2>
+            <form class="mt-8 max-w-xl mx-auto" action="sent.html" method="get">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="w-full mt-2 p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="w-full mt-2 p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" name="message" class="w-full mt-2 p-2 border rounded" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto text-center text-white">
+            &copy; 2024 Muhammad Dzaky Tafirly.
+        </div>
+    </footer>
+</body>
+</html>
